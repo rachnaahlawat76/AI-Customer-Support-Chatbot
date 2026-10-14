@@ -1,0 +1,133 @@
+[
+  {
+    "id": "greeting",
+    "topic": "Greetings",
+    "question": "hello",
+    "examples": [
+      "hi",
+      "hey",
+      "good morning",
+      "good evening",
+      "how are you"
+    ],
+    "answer": "Hello! 👋 I’m your help assistant. What can I help you with today?",
+    "details": "Hello! I can answer common questions about getting started, accounts, pricing, delivery, returns, and contacting support."
+  },
+  {
+    "id": "getting_started",
+    "topic": "Getting started",
+    "question": "how do I get started",
+    "examples": [
+      "how to begin",
+      "first steps",
+      "how does this work",
+      "help me start",
+      "what can you do"
+    ],
+    "answer": "To get started, tell me what you want to do and I’ll guide you through the available options. You can also ask about accounts, pricing, delivery, returns, or support.",
+    "details": "Start by describing your goal in one sentence. I’ll match your question to the closest topic in my knowledge base and provide a helpful answer. If I don’t know the answer, I’ll say so rather than make one up."
+  },
+  {
+    "id": "account",
+    "topic": "Account help",
+    "question": "I need help with my account",
+    "examples": [
+      "forgot my password",
+      "can't log in",
+      "login problem",
+      "change account details",
+      "reset password",
+      "account access"
+    ],
+    "answer": "For account access, use the 'Forgot password' option on the sign-in page. If you still can’t sign in, contact the support team with the email address linked to your account. Never share your password.",
+    "details": "For account access, first check that your email address is correct, then use 'Forgot password' on the sign-in page. Check your spam folder for the reset email. If the problem continues, contact support with the email address linked to your account. Never send your password or verification code to anyone."
+  },
+  {
+    "id": "pricing",
+    "topic": "Pricing",
+    "question": "what are your prices",
+    "examples": [
+      "how much does it cost",
+      "pricing plans",
+      "is it free",
+      "subscription fee",
+      "charges",
+      "payment options"
+    ],
+    "answer": "Pricing depends on the plan or service you choose. Please check the product’s pricing page for the latest prices and included features.",
+    "details": "Pricing can vary by plan, billing period, and included features. Check the official pricing page before purchasing, because this demo knowledge base does not contain live prices or billing data."
+  },
+  {
+    "id": "delivery",
+    "topic": "Delivery",
+    "question": "where is my order",
+    "examples": [
+      "track my order",
+      "delivery status",
+      "when will it arrive",
+      "shipping time",
+      "my package is late",
+      "order tracking"
+    ],
+    "answer": "To check an order, open your order history and select the tracking link. Delivery dates depend on the carrier and destination. This demo chatbot cannot access live order information.",
+    "details": "Open your order history, choose the relevant order, and select its tracking link. If tracking has not updated for several days or the delivery date has passed, contact the seller or carrier with your order number. This demo chatbot cannot retrieve real-time order status."
+  },
+  {
+    "id": "returns",
+    "topic": "Returns",
+    "question": "how can I return an item",
+    "examples": [
+      "refund request",
+      "exchange a product",
+      "return policy",
+      "item arrived damaged",
+      "cancel my order",
+      "get my money back"
+    ],
+    "answer": "Return and refund rules depend on the seller and product. Check the order page for its return window and instructions. If an item arrived damaged, keep the packaging and contact support with photos.",
+    "details": "Open the order page and look for return or refund options. Check the return deadline, item condition requirements, and whether the seller offers a refund or exchange. For damaged items, keep the packaging and take clear photos before contacting support. This demo cannot initiate a real return or refund."
+  },
+  {
+    "id": "contact",
+    "topic": "Contact support",
+    "question": "how do I contact support",
+    "examples": [
+      "customer service",
+      "support email",
+      "phone number",
+      "talk to a human",
+      "speak with an agent",
+      "contact details"
+    ],
+    "answer": "Look for the Contact Us or Help section on the service’s official website. This demo project has no real support team or live contact details configured.",
+    "details": "For real help, use the Contact Us or Help section on the official website or app. Include a short description of the issue and any relevant reference number, but never include passwords or one-time verification codes. This demo project does not have a connected support team."
+  },
+  {
+    "id": "privacy",
+    "topic": "Privacy and data",
+    "question": "what happens to my data",
+    "examples": [
+      "privacy policy",
+      "is my information safe",
+      "data protection",
+      "do you store my messages",
+      "personal information"
+    ],
+    "answer": "This sample app uses a session to remember the last topic for follow-up questions. Review and adapt the code and hosting configuration before using it with real personal data.",
+    "details": "This demo stores the most recent topic in a Flask session so it can understand short follow-up questions. It does not connect to a customer database. Before production use, review session security, logging, retention, consent, and the applicable privacy requirements."
+  },
+  {
+    "id": "thanks",
+    "topic": "Thanks",
+    "question": "thank you",
+    "examples": [
+      "thanks",
+      "thank you so much",
+      "that's helpful",
+      "great thanks",
+      "appreciate it"
+    ],
+    "answer": "You’re welcome! 😊 Is there anything else you’d like to ask?",
+    "details": "You’re welcome! Ask another question whenever you’re ready."
+  }
+]

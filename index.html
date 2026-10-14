@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QueryMate — AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="chat-card">
+      <header class="chat-header">
+        <div class="bot-avatar">✦</div>
+        <div>
+          <h1>QueryMate</h1>
+          <p><span class="online-dot"></span> AI help assistant · Demo</p>
+        </div>
+        <button id="reset-button" class="reset-button" title="Start a new conversation">New chat</button>
+      </header>
+
+      <div class="welcome">
+        <p class="eyebrow">YOUR PERSONAL HELP ASSISTANT</p>
+        <h2>Hi there! How can I help?</h2>
+        <p>Ask a question in your own words. I’ll try to understand it and keep track of the topic during our conversation.</p>
+        <div class="suggestions">
+          <button class="suggestion" data-question="How do I reset my password?">🔐 Account help</button>
+          <button class="suggestion" data-question="How much does it cost?">💳 Pricing</button>
+          <button class="suggestion" data-question="Where is my order?">📦 Delivery</button>
+          <button class="suggestion" data-question="How can I return an item?">↩️ Returns</button>
+        </div>
+      </div>
+
+      <section id="messages" class="messages" aria-live="polite" aria-label="Chat messages">
+        <div class="message bot-message">
+          <div class="message-avatar">✦</div>
+          <div class="bubble">Hello! I can help with common questions about accounts, pricing, delivery, returns, and more. What would you like to know?</div>
+        </div>
+      </section>
+
+      <form id="chat-form" class="composer">
+        <input id="message-input" type="text" maxlength="1000" placeholder="Type your question..." autocomplete="off" aria-label="Your question" required>
+        <button type="submit" id="send-button" aria-label="Send message">➤</button>
+      </form>
+      <footer>Demo knowledge base · Don’t enter passwords or sensitive information</footer>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

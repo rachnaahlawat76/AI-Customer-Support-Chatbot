@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root { font-family: 'DM Sans', sans-serif; color: #20213a; background: #f4f5fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 15% 10%, #e4e7ff 0, transparent 32%), radial-gradient(circle at 85% 90%, #d9f6f0 0, transparent 30%), #f7f8fc; }
+.app-shell { min-height: 100vh; display: grid; place-items: center; padding: 28px 16px; }
+.chat-card { width: min(760px, 100%); min-height: 690px; display: flex; flex-direction: column; background: rgba(255,255,255,.94); border: 1px solid #e7e8f2; border-radius: 26px; box-shadow: 0 24px 80px rgba(43,49,93,.12); overflow: hidden; }
+.chat-header { display: flex; align-items: center; gap: 13px; padding: 22px 26px; border-bottom: 1px solid #eef0f7; }
+.bot-avatar { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 15px; color: white; font-size: 24px; background: linear-gradient(135deg,#6968f4,#8b70ed); box-shadow: 0 7px 18px #7771ed40; }
+h1 { font: 800 19px 'Manrope', sans-serif; margin: 0 0 4px; letter-spacing: -.4px; }
+.chat-header p { margin: 0; color: #7b8097; font-size: 12px; }
+.online-dot { display: inline-block; width: 7px; height: 7px; margin-right: 4px; background: #2bbf91; border-radius: 50%; }
+.reset-button { margin-left: auto; border: 1px solid #e7e8f3; background: #fff; color: #666b86; border-radius: 10px; padding: 9px 12px; cursor: pointer; font: 600 12px 'DM Sans'; }
+.welcome { padding: 28px 28px 18px; }
+.eyebrow { color: #7773eb !important; font-size: 10px !important; font-weight: 700; letter-spacing: 1.5px; }
+.welcome h2 { font: 800 27px 'Manrope', sans-serif; letter-spacing: -.8px; margin: 8px 0; }
+.welcome p { color: #777d95; font-size: 13px; line-height: 1.65; max-width: 530px; }
+.suggestions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
+.suggestion { background: #fff; border: 1px solid #e6e7f3; color: #555b78; border-radius: 11px; padding: 10px 12px; font: 600 12px 'DM Sans'; cursor: pointer; transition: .18s; }
+.suggestion:hover { border-color: #8a83f2; background: #f7f6ff; transform: translateY(-1px); }
+.messages { flex: 1; min-height: 150px; max-height: 330px; overflow-y: auto; padding: 8px 26px 18px; display: flex; flex-direction: column; gap: 15px; }
+.message { display: flex; align-items: flex-end; gap: 9px; max-width: 92%; }
+.user-message { align-self: flex-end; flex-direction: row-reverse; }
+.message-avatar { flex: 0 0 28px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 10px; background: #eeedff; color: #6b66e9; font-size: 14px; }
+.user-message .message-avatar { background: #dff7ef; color: #168967; }
+.bubble { padding: 12px 15px; border-radius: 15px 15px 15px 4px; background: #f3f4fa; color: #424761; font-size: 13px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.user-message .bubble { background: linear-gradient(135deg,#6c68ec,#8275ed); color: white; border-radius: 15px 15px 4px 15px; }
+.typing { color: #898da2; font-size: 12px; padding: 4px 0; }
+.composer { margin: 0 22px; padding: 9px; display: flex; gap: 10px; border: 1px solid #e7e8f3; background: #fff; border-radius: 16px; box-shadow: 0 6px 20px #353a6a0a; }
+.composer input { flex: 1; min-width: 0; border: 0; outline: 0; padding: 9px 10px; color: #303550; font: 13px 'DM Sans'; background: transparent; }
+.composer input::placeholder { color: #a0a4b6; }
+.composer button { width: 42px; height: 42px; border: 0; border-radius: 12px; background: #716ced; color: #fff; font-size: 19px; cursor: pointer; }
+.composer button:disabled { opacity: .55; cursor: wait; }
+footer { text-align: center; padding: 14px 12px 17px; color: #a0a4b6; font-size: 10px; }
+@media (max-width: 520px) { .app-shell { padding: 0; } .chat-card { min-height: 100vh; border-radius: 0; } .chat-header { padding: 18px; } .welcome { padding: 23px 18px 15px; } .welcome h2 { font-size: 23px; } .messages { padding: 8px 18px 18px; } .composer { margin: 0 14px; } }
